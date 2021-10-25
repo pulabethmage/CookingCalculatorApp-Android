@@ -2,7 +2,7 @@
 Custom Android app that is developed for a chef that they can set timers according to their needs.
 
 </br> </br> 
-<img width="250px" src="https://user-images.githubusercontent.com/87483405/138673899-c872ea01-9e19-4a30-8209-c941fdaafba4.png"/>
+<img src="https://user-images.githubusercontent.com/87483405/138673899-c872ea01-9e19-4a30-8209-c941fdaafba4.png"/>
 
 </br> </br> 
 
