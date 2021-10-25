@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/mainbackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="COOKING TIME CALCULATOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/whiterounded"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Key in the oven wattage, power setting &amp; cooking time shown on the food packaging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FF9419"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Please amend/adjust values below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="Wattage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="Cooking Time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="Power %"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="#47D3FF"
+                android:hint="wattage"
+                android:text="1000"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/et_food_wattage"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="#47D3FF"
+                android:hint="time"
+                android:text="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/et_food_cooking_time"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="#47D3FF"
+                android:hint="%"
+                android:text="100%"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/et_food_power"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/whiterounded"
+        android:padding="15dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="How many watts is your own oven?"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"/>
+
+
+        <EditText
+            android:textColorHint="#47D3FF"
+            android:hint="wattage"
+            android:text="900"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/et_your_oven_wattage"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/green_edit_text_background"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:background="@drawable/whiterounded"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="What power % options does your oven have?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FF9419"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Please amend/adjust values below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:background="@drawable/whiterounded"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColorHint="#47D3FF"
+                android:hint="%"
+                android:text="100%"
+                android:id="@+id/et_oven_power_id_1"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textColorHint="#47D3FF"
+                android:hint="%"
+                android:text="80%"
+                android:id="@+id/et_oven_power_id_2"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textColorHint="#47D3FF"
+                android:hint="%"
+                android:text="60%"
+                android:id="@+id/et_oven_power_id_3"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textColorHint="#47D3FF"
+                android:hint="%"
+                android:text="30%"
+                android:id="@+id/et_oven_power_id_4"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+
+                android:gravity="center"
+                android:textColorHint="#FF9747"
+                android:hint="%"
+                android:text="10%"
+                android:id="@+id/et_oven_power_id_5"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/green_edit_text_background"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/calculate_btn"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:text="HOW LONG TO COOK YOUR FOOD"
+                android:layout_gravity="center"
+                android:background="@drawable/calculate_button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/result_pannel"
+            android:padding="5dp"
+            android:background="@drawable/whiterounded"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="2dp"
+                    android:background="@drawable/top_left_rounded_dark"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="Power %"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:padding="2dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/top_right_rounded_light"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="Min:Sec"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_your_result_power_percentage_1"
+                    android:background="#CFDEFD"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_result_power_percentage_1"
+                    android:background="#E0EAFC"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_your_result_power_percentage_2"
+                    android:background="#CFDEFD"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="80%"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_result_power_percentage_2"
+                    android:background="#E0EAFC"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_your_result_power_percentage_3"
+                    android:background="#CFDEFD"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="60%"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_result_power_percentage_3"
+                    android:background="#E0EAFC"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_your_result_power_percentage_4"
+                    android:background="#CFDEFD"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="25%"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_result_power_percentage_4"
+                    android:background="#E0EAFC"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_your_result_power_percentage_5"
+                    android:background="@drawable/bottom_left_rounded_dark"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_result_power_percentage_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_right_rounded_light"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4654090325788959/9162638952">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
+
+</ScrollView>
+
+    </LinearLayout>
